@@ -23,12 +23,12 @@ function App() {
         <label className='title'>First Name: </label>
         <input className='input-box' type="text" name="firstName" {...register("firstName", 
         {required: 'First name is required!'})}/>
-        {errors.firstName && <p>{}errors.firstName.message</p>}
+        {errors.firstName && <p>{errors.firstName.message}</p>}
 
         <label className='title'>Last Name: </label>
         <input className='input-box' type="text" name="lastName" {...register("lastName", 
         {required: 'Last name is required!'})}/>
-        {errors.lastName && <p>{}errors.lastName.message</p>}
+        {errors.lastName && <p>{errors.lastName.message}</p>}
 
         <label className='title'>Email: </label>
         <input className='input-box' type="text" name="email" {...register("email", 
